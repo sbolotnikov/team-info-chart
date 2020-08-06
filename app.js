@@ -24,10 +24,7 @@ function inputEmployeeInfo() {
         } else {
             employeeData = new Intern(response.employeeName, employees.length + 1, response.email, response.school);
         }
-        console.log(response.employeeName, employees.length + 1, response.email, response.officeNumber)
-        // console.log(employeeData);
         employees.push(employeeData);
-        console.log(employees)
         if (response.nextE) {
             inputEmployeeInfo();
         } else {
@@ -39,9 +36,9 @@ function inputEmployeeInfo() {
                 console.log("There is no engineers on team");
                 inputEmployeeInfo();
             } else {
-                fs.writeFile(outputPath, render(employees), (er) => {
+                fs.writeFile(outputPath, render(employees, teamName), (er) => {
                     if (er) return console.log(er);
-                    console.log(`Team.html completed...Look for ./output/Team.html`);
+                    console.log(`team.html completed...Look for ${outputPath}`);
                 });
                 return
             }
