@@ -16,13 +16,13 @@ function inputEmployeeInfo() {
     let employeeData = {};
     inquirer.prompt(questionsArr).then(response => {
         if (response.employeePosition === "Manager") {
-            employeeData = new Manager(response.employeeName, employees.length + 1, response.email, response.officeNumber);
+            employeeData = new Manager(response.employeeName, response.employeeID, response.email, response.officeNumber);
             isManager = true
         } else if (response.employeePosition === "Engineer") {
-            employeeData = new Engineer(response.employeeName, employees.length + 1, response.email, response.gitHubAddress);
+            employeeData = new Engineer(response.employeeName, response.employeeID, response.email, response.gitHubAddress);
             isEngineer = true;
         } else {
-            employeeData = new Intern(response.employeeName, employees.length + 1, response.email, response.school);
+            employeeData = new Intern(response.employeeName, response.employeeID, response.email, response.school);
         }
         employees.push(employeeData);
         if (response.nextE) {

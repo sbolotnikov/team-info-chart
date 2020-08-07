@@ -1,0 +1,51 @@
+.card {
+    box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12)
+;
+margin-top: 20px;
+margin-bottom: 20px;
+align-self: center;
+width :90%;
+margin-left: 5%;
+margin-right: 5%;
+color: blueviolet;
+}
+.text-center{
+  font-family: cursive;
+  font-weight: 900;
+  font-style: oblique;
+  color: brown;
+}
+.card-header{
+  background: antiquewhite;
+  opacity: .85;
+}
+.card-body{
+  opacity: .85;
+}
+.manager {
+  
+  background: url('./images/manager.png') center no-repeat;
+  background-position: top;
+  background-size: auto;
+
+}
+.engineer {
+  background: url('./images/engineer.png') center no-repeat;
+  background-position: top;
+  background-size: cover;
+  
+}
+
+.intern {
+  background: linear-gradient(green,yellow,red);
+  background-size: auto;
+}
+body{
+  background: radial-gradient(white,lightblue);
+}
