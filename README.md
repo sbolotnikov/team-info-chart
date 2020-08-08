@@ -30,12 +30,6 @@ yarn install
 ```
 
 ## Usage 
-
-To start 
-
-```
-node index.js
-```
 Look at video for further instructions:
 [YouTube](https://youtu.be/mlQAWMMPP2w )
 
@@ -83,3 +77,6 @@ All tests are in `test` folder
   * Here is this repo link: https://github.com/sbolotnikov/team-info-chart
  
   * Link: application is not deployed
+
+  * BONUS: All input is validated and portfolio updated link:
+    https://sbolotnikov.github.io/Responsive-Portfolio/
